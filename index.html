@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <title>Template-Store</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+.logo{
+   font-size: 50px;
+  font-family: 'Pacifico', cursive;
+}
+.logo:hover {
+ font-size: 51px;
+}
+.logal:hover {
+ font-size: 31px;
+}
+.logal{
+  color: white;
+     font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  
+}
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+  
+}
+p{
+  
+  font-family: 'Montserrat', sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid black;
+}
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+.card {
+
+  max-width: 300px;
+text-align: center;
+ display: table-cell;
+  border: 30px solid transparent;
+  text-align: center;
+  font-family: arial;
+   justify-content: space-around;
+    margin-left: 25px;
+    margin-right: 25px;
+    
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+    opacity: 0.8;
+}
+
+.card button:hover {
+  opacity: 1;
+
+  transform: scale(1.1);
+}
+img{
+   height: 400px;
+    width: 500px;
+}
+button{
+  
+  font-family: 'Montserrat', sans-serif;
+}
+.credy{
+   text-align: center;
+    color: white;
+    opacity; 0.7px;
+  
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <hr>
+  <h1 id="demo"></h1>
+  <center><h1 class="logal">Template</h1></center>
+  <hr>
+  <a href="#Produtos">Produtos</a>
+  <a href="#Suporte">Suporte</a>
+  <a href="#Sobre">Sobre</a>
+    <center><p class="credy">Dev By Hyd3</p></center>
+  <Center>
+
+  </Center>
+</div>
+
+<div id="main">
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+  <center><h1 class="logo">Template</h1></center>
+  <div class="separator">Produtos</div>
+
+
+<br>
+<br>
+<center>
+<div class="card">
+
+  <h1>Produto</h1>
+  <p class="price">R$ 99.99</p>
+  <p>Descrição do produto</p>
+  <p><button>Adicionar ao carrinho</button></p>
+</div>
+<div class="card">
+  
+   <h1>Produto</h1>
+  <p class="price">R$ 99.99</p>
+<p>Descrição do produto</p>
+  <p><button>Adicionar ao carrinho</button></p>
+</div>
+<div class="card">
+
+ <h1>Produto</h1>
+  <p class="price">R$ 99.99</p>
+  <p>Descrição do produto</p>
+  <p><button>Adicionar ao carrinho</button></p>
+</div>
+<div class="card">
+
+ <h1>Produto</h1>
+  <p class="price">R$ 99.99</p>
+ <p>Descrição do produto</p>
+  <p><button>Adicionar ao carrinho</button></p>
+</div>
+<div class="card">
+  
+ <h1>Produto</h1>
+  <p class="price">R$ 99.99</p>
+ <p>Descrição do produto</p>
+  <p><button>Adicionar ao carrinho</button></p>
+</div>
+
+
+
+</center>
+<br>
+  <div class="separator">Quem somos?</div>
+  <br><center>
+    <p>Conte sobre sua empresa/loja aqui</p>
+<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Portugal&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.embedgooglemap.net/blog/elementor-review/"></a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></center>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
