@@ -1,2 +1,2 @@
-# templateloja
-Template para lojas simples.
+# Template Loja
+Template para lojas simples para mobile e desktop.
