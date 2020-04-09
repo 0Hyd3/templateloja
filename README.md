@@ -1,2 +1,2 @@
 # Template Loja
-Template para lojas simples para mobile e desktop.
+Template para lojas minimalistas para mobile e desktop.
